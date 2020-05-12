@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-9">
+        <p (click)='goToUrl(objective)'*ngFor="let objective of objectives" class="text-justify">
+            {{objective.id}}.&nbsp; {{objective.name}}&nbsp;
+            <sup><i class="fas fa-external-link-alt"></i></sup><br>
+            {{objective.details}}
+        </p>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+    
